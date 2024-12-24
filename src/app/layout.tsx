@@ -100,9 +100,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <HexagonBackground />
-          <Navbar />
-          <main className=" relative z-10">{children}</main>
-          <Footer />
+          <main className="relative z-10 min-h-dvh flex flex-col">
+            <Navbar />
+            <section className="flex-grow min-h-dvh">{children}</section>
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>
