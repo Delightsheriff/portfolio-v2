@@ -1,5 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { JetBrains_Mono, Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains",
+});
 
 const options = {
   title: "Amadi-Sheriff Delight | Software Engineer",
@@ -45,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", // Add your OG image path
+        url: "https://www.delightsheriff.tech/favicon.ico", // Add your OG image path
         width: 1200,
         height: 630,
         alt: "Amadi-Sheriff Delight - Software Engineer",
@@ -79,7 +91,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body
+        className={`${jetbrains.className} ${montserrat.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

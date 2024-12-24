@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        jetbrains: ["var(--font-jetbrains)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
