@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { JetBrains_Mono, Montserrat } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -55,21 +56,16 @@ export const metadata: Metadata = {
     siteName: options.siteName,
     locale: options.locale,
     type: "website",
-    images: [
-      {
-        url: "https://www.delightsheriff.tech/favicon.ico", // Add your OG image path
-        width: 1200,
-        height: 630,
-        alt: "Amadi-Sheriff Delight - Software Engineer",
-      },
-    ],
+    images:
+      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735077533/jahyiqv9dpmgv9v7lnuc.ico",
   },
   twitter: {
     card: "summary_large_image",
     title: options.title,
     description: options.description,
     creator: "@quietandstuff",
-    images: ["https://www.delightsheriff.tech/favicon.ico"],
+    images:
+      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735077533/jahyiqv9dpmgv9v7lnuc.ico",
   },
   robots: {
     index: true,
@@ -90,11 +86,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en suppressHydrationWarning">
       <body
         className={`${jetbrains.className} ${montserrat.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
