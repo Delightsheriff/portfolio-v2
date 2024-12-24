@@ -91,7 +91,7 @@ export default function RootLayout({
   return (
     <html lang="en suppressHydrationWarning">
       <body
-        className={`${jetbrains.className} ${montserrat.variable} antialiased min-h-dvh`}
+        className={`${jetbrains.className} ${montserrat.variable} antialiased min-h-dvh text-gray-900 dark:text-white`}
       >
         <ThemeProvider
           attribute="class"
