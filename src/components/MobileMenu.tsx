@@ -66,7 +66,7 @@ export default function MobileMenu() {
             <Link
               key={link.title}
               href={link.href}
-              className="flex items-center gap-x-2 font-karla font-semibold text-lg dark:shadow-line-dark shadow-line-light p-6 group"
+              className="flex items-center gap-x-2 font-montserrat font-semibold text-lg dark:shadow-line-dark shadow-line-light p-6 group"
               onClick={onToggleNav}
             >
               <link.icon
