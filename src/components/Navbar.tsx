@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/logo.png";
+import Logo from "../../public/logo.png";
 import UnmountStudio from "./Unmount";
 import { DarkModeToggle } from "./DarkmodeToggle";
 import MobileMenu from "./MobileMenu";
