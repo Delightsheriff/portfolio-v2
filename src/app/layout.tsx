@@ -3,6 +3,8 @@ import "./globals.css";
 import { JetBrains_Mono, Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import HexagonBackground from "@/components/Background";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -98,7 +100,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <HexagonBackground />
-          <div className=" relative z-10">{children}</div>
+          <Navbar />
+          <main className=" relative z-10">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
