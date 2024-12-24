@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { JetBrains_Mono, Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import HexagonBackground from "@/components/Background";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -88,7 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en suppressHydrationWarning">
       <body
-        className={`${jetbrains.className} ${montserrat.variable} antialiased`}
+        className={`${jetbrains.className} ${montserrat.variable} antialiased min-h-dvh`}
       >
         <ThemeProvider
           attribute="class"
@@ -96,7 +97,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className=" relative z-10">
+            <HexagonBackground />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
