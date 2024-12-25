@@ -1,3 +1,9 @@
+import { PageAnimation } from "@/components/PageAnimation";
+
 export default function Home() {
-  return <p>Home Page</p>;
+  return (
+    <PageAnimation>
+      <p>Home Page</p>;
+    </PageAnimation>
+  );
 }

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import HexagonBackground from "@/components/Background";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { AnimatePresence } from "framer-motion";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -102,7 +103,9 @@ export default function RootLayout({
           <HexagonBackground />
           <main className="relative z-10 min-h-dvh flex flex-col">
             <Navbar />
-            <section className="flex-grow min-h-dvh">{children}</section>
+            <AnimatePresence mode="wait">
+              <section className="flex-grow min-h-dvh">{children}</section>
+            </AnimatePresence>
             <Footer />
           </main>
         </ThemeProvider>
