@@ -17,7 +17,7 @@ export default function Error({ error, reset }: Props) {
       <div className="mx-auto max-w-md text-center">
         <div className="mx-auto h-12 w-12 text-primary" />
 
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
           Something went wrong!
         </h1>
 

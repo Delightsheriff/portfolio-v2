@@ -104,7 +104,9 @@ export default function RootLayout({
           <main className="relative z-10 min-h-dvh flex flex-col">
             <Navbar />
             <AnimatePresence mode="wait">
-              <section className="flex-grow min-h-dvh">{children}</section>
+              <section className="flex-grow min-h-[calc(100dvh-4rem)]">
+                {children}
+              </section>
             </AnimatePresence>
             <Footer />
           </main>
