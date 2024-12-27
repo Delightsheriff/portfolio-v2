@@ -76,7 +76,7 @@ export const CustomPortableText: PortableTextComponents = {
       );
     },
     code: ({ children }) => (
-      <code className="font-montserrat py-[0.15rem] px-1 rounded-sm font-medium dark:bg-primary-bg bg-secondary-bg dark:text-gray-200 text-pink-500">
+      <code className="font-montserrat py-[0.15rem] px-1 rounded-sm font-medium dark:bg-colors-primary-bg bg-colors-secondary-bg dark:text-gray-200 text-pink-500">
         {children}
       </code>
     ),

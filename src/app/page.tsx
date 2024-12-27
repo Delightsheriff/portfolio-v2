@@ -3,14 +3,12 @@ import { PageAnimation } from "@/components/PageAnimation";
 import Social from "@/components/Social";
 import { getProfile } from "@/sanity/sanity.query";
 import { ProfileType } from "@/types";
-// import Image from "next/image";
 
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
   return (
     <PageAnimation>
       <main className="max-w-7xl mx-auto lg:px-16 px-6">
-        {/* <section className="flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 lg:mt-32 mt-20 mb-16"> */}
         <section className="lg:mt-32 mt-20 mb-16">
           {profile &&
             profile.map((data) => (
@@ -24,15 +22,7 @@ export default async function Home() {
                 </ul>
               </div>
             ))}
-          {/* <div className="xl:mt-0 mt-10">
-            <Image
-              src={profile && profile[0]?.profileImage.image}
-              alt={profile && profile[0]?.profileImage.alt}
-              width={400}
-              height={400}
-              className="rounded-lg"
-            />
-          </div> */}
+         
         </section>
         <Job />
       </main>

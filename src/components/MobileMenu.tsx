@@ -37,7 +37,7 @@ export default function MobileMenu() {
       <button
         aria-label="Toggle Menu"
         onClick={onToggleNav}
-        className="md:hidden dark:bg-primary-bg bg-secondary-bg border dark:border-gray-800 border-gray-200 rounded-md p-2"
+        className="md:hidden dark:bg-colors-primary-bg bg-colors-secondary-bg border dark:border-gray-800 border-gray-200 rounded-md p-2"
       >
         <RxHamburgerMenu className="text-xl" />
       </button>
@@ -54,7 +54,7 @@ export default function MobileMenu() {
           <button
             aria-label="Toggle Menu"
             onClick={onToggleNav}
-            className={`md:hidden dark:bg-primary-bg bg-secondary-bg border dark:border-gray-800 border-gray-200 rounded-full p-2 duration-500 ${
+            className={`md:hidden dark:bg-colors-primary-bg bg-colors-secondary-bg border dark:border-gray-800 border-gray-200 rounded-full p-2 duration-500 ${
               !navShow ? "-rotate-[360deg]" : null
             }`}
           >

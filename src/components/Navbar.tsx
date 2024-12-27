@@ -31,7 +31,7 @@ export default function Navbar() {
                 <li key={id}>
                   <Link
                     href={link.href}
-                    className="font-montserrat dark:text-white text-gray-600 dark:hover:text-primary-color hover:text-gray-900 duration-300 text-base"
+                    className="font-montserrat dark:text-white text-gray-600 dark:hover:text-colors-primary-color hover:text-gray-900 duration-300 text-base"
                   >
                     {link.title}
                   </Link>
