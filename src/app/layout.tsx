@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     locale: options.locale,
     type: "website",
     images:
-      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735077533/jahyiqv9dpmgv9v7lnuc.ico",
+      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735282721/portfolio/qgvvho0sgskbtsumfytf.png",
   },
   twitter: {
     card: "summary_large_image",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description: options.description,
     creator: "@quietandstuff",
     images:
-      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735077533/jahyiqv9dpmgv9v7lnuc.ico",
+      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735282721/portfolio/qgvvho0sgskbtsumfytf.png",
   },
   robots: {
     index: true,

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://www.delightsheriff.tech/projects",
     description: "Explore projects built by Amadi-Sheriff Delight",
     images:
-      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735077533/jahyiqv9dpmgv9v7lnuc.ico",
+      "https://res.cloudinary.com/dhlbkd9i9/image/upload/v1735282721/portfolio/qgvvho0sgskbtsumfytf.png",
   },
 };
 
@@ -25,7 +25,7 @@ export default async function Projects() {
     <PageAnimation>
        <main className="max-w-7xl mx-auto md:px-16 px-6">
         <section className="max-w-2xl mb-16">
-          <h1 className="text-3xl font-bold font-karla tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight">
+          <h1 className="text-3xl font-bold font-montserrat tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight">
             Projects That Define My Development Journey
           </h1>
           <p className="text-base dark:text-gray-200 leading-relaxed">
@@ -56,7 +56,7 @@ export default async function Projects() {
                   className="bg-gray-800 rounded-md p-2"
                 />
                 <div>
-                  <h2 className="font-semibold font-karla text-white mb-1">
+                  <h2 className="font-semibold font-montserrat text-white mb-1">
                     {project.name}
                   </h2>
                   <div className="text-sm dark:text-gray-400 text-gray-600 ">
