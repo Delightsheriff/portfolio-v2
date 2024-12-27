@@ -61,7 +61,7 @@ export default async function About() {
                     <div className="flex flex-col text-center gap-y-4">
                       <div className="flex items-center gap-x-3">
                         <Link
-                          href="https://drive.google.com/file/d/1amjF_SzXe91wb9aOtIgqWM9eR9yG30qS/view?usp=sharing"
+                          href="https://drive.google.com/file/d/1AUSRbqnRzciqt5JUavsbL-CIMyJZELi6/view?usp=sharing"
                           className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-colors-primary-bg bg-gray-100 border border-transparent dark:hover:border-gray-700 hover:border-gray-200 rounded-md py-2 text-lg font-montserrat font-semibold"
                         >
                           View Résumé <BiLinkExternal className="text-base" />
